@@ -30,6 +30,7 @@ const BlogPost = styled.div`
 `;
 
 const BlogTitle = styled.h2`
+
   background-color: #f8e03e;
   color: #2f2f2f;
 `;
