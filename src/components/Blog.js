@@ -14,22 +14,28 @@ const BlogWrapper = styled.div`
     width: calc(100% - 250px);
     margin-left: 250px;
   }
+
+  @media screen and (max-width: 767px) {
+    height: calc(100vh - 120px);
+    margin-top: 120px;
+  }
 `;
 
 const BlogPost = styled.div`
-  background-color: #f8e03e;
-  padding: 20px;
+  background-color: #2f2f2f;
+  border-style: solid;
+  border-color: #f8e03e;
   margin-bottom: 20px;
   border-radius: 5px;
 `;
 
 const BlogTitle = styled.h2`
-  color: #713491;
-  margin-bottom: 10px;
+  background-color: #f8e03e;
+  color: #2f2f2f;
 `;
 
 const BlogContent = styled.p`
-  color: #713491;
+  color: #11cef6;
 `;
 
 function Blog() {

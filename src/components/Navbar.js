@@ -31,14 +31,14 @@ const Logo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px; // set a maximum width
-  margin: 20px auto 20px; // center the logo and add a bottom margin
+  width: 200px;
+  margin: 20px auto 20px;
   cursor: pointer;
 
   img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; // this will make sure the logo scales properly within its container
+    object-fit: contain;
   }
 `;
 
