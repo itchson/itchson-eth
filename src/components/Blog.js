@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import ReactMarkdown from 'react-markdown';
-import gfm from 'remark-gfm';
-import { getPostData } from '../lib/posts';
 
 const BlogWrapper = styled.div`
   width: 100%;
@@ -33,7 +30,6 @@ const BlogPost = styled.div`
 `;
 
 const BlogTitle = styled.h2`
-
   background-color: #f8e03e;
   color: #2f2f2f;
 `;
@@ -42,28 +38,30 @@ const BlogContent = styled.p`
   color: #11cef6;
 `;
 
-const Blog = () => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const postsData = await getPostData();
-      setPosts(postsData);
-    };
-
-    fetchPosts();
-  }, []);
+function Blog() {
+  // Replace with your actual blog data
+  const blogPosts = [
+    {
+      title: 'Blog Post 1',
+      content: 'This is the content of the first blog post.',
+    },
+    {
+      title: 'Blog Post 2',
+      content: 'This is the content of the second blog post.',
+    },
+    // Add more blog posts as needed
+  ];
 
   return (
     <BlogWrapper>
-      {posts.map((post, index) => (
+      {blogPosts.map((post, index) => (
         <BlogPost key={index}>
-          <BlogTitle>{post.metadata.title}</BlogTitle>
-          <StyledMarkdown remarkPlugins={[gfm]}>{post.content}</StyledMarkdown>
+          <BlogTitle>{post.title}</BlogTitle>
+          <BlogContent>{post.content}</BlogContent>
         </BlogPost>
       ))}
     </BlogWrapper>
   );
-};
+}
 
 export default Blog;
