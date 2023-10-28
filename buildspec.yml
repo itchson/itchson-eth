@@ -25,8 +25,8 @@ cache:
     - 'node_modules/**/*'
 
 artifacts:
-  files: out/**/*
-  base-directory: out
+  files: -'**/*'
+  base-directory: 'build'
 
 env:
   variables:
