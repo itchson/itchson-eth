@@ -19,7 +19,6 @@ phases:
   post_build:
     commands:
       - echo Build complete...
-      - aws s3 sync out/ s3://itchson.eth/ --delete
 
 cache:
   paths:
