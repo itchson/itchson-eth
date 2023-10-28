@@ -29,6 +29,6 @@ artifacts:
   files: out/**/*
   base-directory: out
 
-environment:
+env:
   variables:
     CI: 'true'
