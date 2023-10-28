@@ -1,0 +1,36 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.navbarContainer {
+  flex: 0 0 220px;
+}
+
+.mainContent {
+  flex: 1;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .layoutContainer {
+    flex-direction: column;
+  }
+
+  .navbarContainer {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    max-height: 100px;
+  }
+
+  .mainContent {
+    flex: 1;
+    width: 100%;
+    overflow-y: overlay;
+    -webkit-overflow-scrolling: touch;
+  }
+}

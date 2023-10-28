@@ -1,0 +1,39 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  min-height: calc(100vh - 100px);
+}
+
+.title {
+  font-size: 2rem;
+  color: #11cef6;
+  margin-bottom: 20px;
+}
+
+.projectList {
+  list-style: none;
+}
+
+.projectItem {
+  margin-bottom: 20px;
+  background-color: #19133b;
+  color: #f8e03e;
+  border: 1px solid #11cef6;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.projectItem h2{
+  color: #fd46d6;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+  
+  .pageContainer {
+    min-height: calc(100vh - 200px);
+  }
+
+}
