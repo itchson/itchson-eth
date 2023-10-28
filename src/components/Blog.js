@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
+import axios from 'axios';
+import matter from 'gray-matter';
 import styled from 'styled-components';
 
 const BlogWrapper = styled.div`
@@ -38,30 +42,28 @@ const BlogContent = styled.p`
   color: #11cef6;
 `;
 
-function Blog() {
-  // Replace with your actual blog data
-  const blogPosts = [
-    {
-      title: 'Blog Post 1',
-      content: 'This is the content of the first blog post.',
-    },
-    {
-      title: 'Blog Post 2',
-      content: 'This is the content of the second blog post.',
-    },
-    // Add more blog posts as needed
-  ];
+const Blog = () => {
+  const [post, setPost] = useState({
+    data: {},
+    content: ''
+  });
+
+  useEffect(() => {
+    axios.get('/blog/galaxy_royale_blog_post.md')
+      .then((response) => {
+        const markdown = matter(response.data);
+        setPost(markdown);
+      });
+  }, []);
 
   return (
     <BlogWrapper>
-      {blogPosts.map((post, index) => (
-        <BlogPost key={index}>
-          <BlogTitle>{post.title}</BlogTitle>
-          <BlogContent>{post.content}</BlogContent>
-        </BlogPost>
-      ))}
+      <BlogPost>
+        <BlogTitle>{post.data.title}</BlogTitle>
+        <BlogContent remarkPlugins={[gfm]} children={post.content} />
+      </BlogPost>
     </BlogWrapper>
   );
-}
+};
 
 export default Blog;
