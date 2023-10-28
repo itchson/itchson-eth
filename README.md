@@ -1,4 +1,4 @@
-# itchson.eth - Personal Website of Itchson
+# itchson.eth
 
 ## Overview
 
