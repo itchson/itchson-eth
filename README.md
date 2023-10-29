@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the GitHub repository of itchson.eth, the digital portfolio and personal website of Itchson. Developed using Next.js 13.5, this site serves as a centralized platform showcasing Itchson's expertise in fields such as Game Development, Web3 Technologies, Artificial Intelligence.
+Welcome to the GitHub repository of itchson.eth, the digital portfolio and personal website of Itchson. Developed using Next.js 14, this site serves as a centralized platform showcasing Itchson's expertise in fields such as Game Development, Web3 Technologies, Artificial Intelligence.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ Welcome to the GitHub repository of itchson.eth, the digital portfolio and perso
 
 ## Technologies Utilized
 
-- Next.js 13.5
+- Next.js 14
 - TypeScript
 - Web3
 - Blockchain
