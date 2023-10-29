@@ -5,18 +5,16 @@ phases:
     commands:
       - echo Installing dependencies...
       - npm install
-      - npm install -g next
-      - npm install gray-matter remark remark-html
 
   pre_build:
     commands:
       - echo Exporting environment variables...
       - printenv > .env
-  
+
   build:
     commands:
-      - echo Compiling the Node.js code...
-      - npm run build
+      - echo Building the Next.js app...
+      - npm run export
 
   post_build:
     commands:
@@ -24,7 +22,7 @@ phases:
 
 artifacts:
   files: '**/*'
-  base-directory: '.next/'
+  base-directory: 'out/'
 
 env:
   variables:
