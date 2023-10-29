@@ -15,12 +15,16 @@ phases:
     commands:
       - echo Exporting Next.js project...
       - npm run export
+      - echo Current Working Directory is...
+      - pwd  # Debugging line to print current directory
+      - echo Listing contents of out directory...
+      - ls -al out  # Debugging line
   post_build:
     commands:
       - echo Build complete...
-      
+
 artifacts:
-  files: 'out/**/*'
+  files: '**/*'
   base-directory: 'out'
 
 env:
