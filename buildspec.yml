@@ -4,22 +4,28 @@ phases:
   install:
     commands:
       - echo Installing dependencies...
+      - npm install
       - npm install -g next
+      - npm install gray-matter remark remark-html
+
   pre_build:
     commands:
       - echo Exporting environment variables...
       - printenv > .env
+  
   build:
     commands:
       - echo Compiling the Node.js code...
       - npm run build
+
   post_build:
     commands:
       - echo Build complete...
+      - aws s3 sync .next/ s3://itchson.eth/ --delete
 
 artifacts:
-  files: -'**/*'
-  base-directory: 'build'
+  files: '**/*'
+  base-directory: '.next/'
 
 env:
   variables:
