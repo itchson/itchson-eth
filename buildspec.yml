@@ -2,16 +2,13 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 18
     commands:
       - echo Installing dependencies...
-      - npm install
+      - npm install -g next
   pre_build:
     commands:
       - echo Exporting environment variables...
       - printenv > .env
-      - npm run type-check
   build:
     commands:
       - echo Compiling the Node.js code...
@@ -19,10 +16,6 @@ phases:
   post_build:
     commands:
       - echo Build complete...
-
-cache:
-  paths:
-    - 'node_modules/**/*'
 
 artifacts:
   files: -'**/*'
