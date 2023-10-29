@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo Installing dependencies...
-      - npm install -g next
+      - npm install
   pre_build:
     commands:
       - echo Exporting environment variables...
