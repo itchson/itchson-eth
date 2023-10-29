@@ -4,25 +4,24 @@ phases:
   install:
     commands:
       - echo Installing dependencies...
-      - npm install
-
+      - npm install -g next
   pre_build:
     commands:
       - echo Exporting environment variables...
       - printenv > .env
-
+      - echo Cleaning up S3 bucket...
+      - aws s3 rm s3://itchson.eth --recursive
   build:
     commands:
-      - echo Building the Next.js app...
+      - echo Exporting Next.js project...
       - npm run export
-
   post_build:
     commands:
       - echo Build complete...
-
+      
 artifacts:
-  files: '**/*'
-  base-directory: 'out/'
+  files: 'out/**/*'
+  base-directory: 'out'
 
 env:
   variables:
