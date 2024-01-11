@@ -6,8 +6,8 @@ import Footer from '../components/Footer';
 const questions = [
     {
       id: 1,
-      question: "What is ITCHSON.ETH ?",
-      answer: "ITCHSON.ETH is a web platform to showcase and share the development process of my Web3 Game Development, as well as other development projects. The site offers a place for you to view and engage with my work and stay up-to-date with the latest projects and updates. Whether you're a game enthusiast or simply interested in software development, itchson.eth is a great place to discover and explore exciting new creations in the world of gaming and development.",
+      question: "What is ITCHSON.COM ?",
+      answer: "ITCHSON.COM is a web platform to showcase and share the development process of my Web3 Game Development, as well as other development projects. The site offers a place for you to view and engage with my work and stay up-to-date with the latest projects and updates. Whether you're a game enthusiast or simply interested in software development, itchson.com is a great place to discover and explore exciting new creations in the world of gaming and development.",
     },
     {
       id: 2,
