@@ -34,7 +34,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     params: { id: post.id },
   }));
 
-  return { paths, fallback: true };
+  return { paths, fallback: false };
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
