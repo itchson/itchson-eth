@@ -6,17 +6,17 @@ import Link from 'next/link';
 const projects = [
   {
     id: 1,
-    title: "Galaxy Royale",
+    title: "Galaxy Royale: Ikinokoru",
     description: "Embark on an epic journey through the cosmos in this immersive web3 top-down space shooter. Dive into a universe teeming with rich lore and action-packed gameplay.",
     technologies: ["Game Development", "C#", "Web3"],
     link: "/projects/galaxy-royale",
   },
   {
     id: 2,
-    title: "IOUNFT",
-    description: "Revolutionize IOUs with Blockchain! Create, mint, and send unique IOU NFTs effortlessly. Seamlessly integrated with MetaMask. Transform informal promises into digital assets today!",
-    technologies: ["Web3"],
-    link: "/projects/iounft",
+    title: "Color Infection",
+    description: "Color Infection is an inventive arcade/puzzle game developed for Pirate Software Game Jam 14. In this engaging title, players control a central square to fend off advancing colored triangles, with each collision altering the square's color and abilities. It's a dynamic test of strategy and reflexes, where mixing and matching color infections is key to survival and high scores",
+    technologies: ["Game Jam", "C#", "Arcade"],
+    link: "/projects/color-infection",
   },
   {
     id: 3,

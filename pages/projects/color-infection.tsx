@@ -3,13 +3,13 @@ import Layout from "../../components/Layout";
 import Footer from "../../components/Footer"
 import styles from "../../styles/iounft.module.css";
 
-const IOUNFT = () => {
+const ColorInfection = () => {
   const [activeTab, setActiveTab] = useState("Overview");
 
   return (
     <Layout title="ITCHSON - PROJECTS / COLOR INFECTION">
       <div className={styles.pageContainer}>
-        <h1 className={styles.projectTitle}>IOUNFT</h1>
+        <h1 className={styles.projectTitle}>COLOR INFECTION</h1>
         <div className={styles.tabContainer}>
           {["Overview", "Download"].map((tab) => (
             <button
@@ -87,4 +87,4 @@ const IOUNFT = () => {
   );
 };
 
-export default IOUNFT;
+export default ColorInfection;

@@ -55,6 +55,15 @@
   padding: 20px;
 }
 
+.section {
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
 /* Media query for mobile view */
 @media only screen and (max-width: 768px) {
 

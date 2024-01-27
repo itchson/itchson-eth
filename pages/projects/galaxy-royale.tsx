@@ -9,7 +9,7 @@ const GalaxyRoyale = () => {
   return (
     <Layout title="ITCHSON - PROJECTS / Galaxy Royale">
       <div className={styles.pageContainer}>
-        <h1 className={styles.projectTitle}>Galaxy Royale</h1>
+        <h1 className={styles.projectTitle}>Galaxy Royale: Ikinokoru</h1>
         <div className={styles.tabContainer}>
           {["Overview", "Download", "Patch Notes"].map((tab) => (
             <button
