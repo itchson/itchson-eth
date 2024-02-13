@@ -13,13 +13,20 @@ const projects = [
   },
   {
     id: 2,
+    title: "DALLE3-X-POST",
+    description: "This project is an AWS Lambda function designed to generate and tweet daily AI-generated game art assets. It utilizes OpenAI's DALL-E 3 for image generation and the Twitter API for tweeting, aimed at providing free resources for game developers.",
+    technologies: ["Java", "Lambda", "Open AI", "Twitter API"],  
+    link: "/projects/dalle3-x-post",
+  },
+  {
+    id: 3,
     title: "Color Infection",
     description: "Color Infection is an inventive arcade/puzzle game developed for Pirate Software Game Jam 14. In this engaging title, players control a central square to fend off advancing colored triangles, with each collision altering the square's color and abilities. It's a dynamic test of strategy and reflexes, where mixing and matching color infections is key to survival and high scores",
     technologies: ["Game Jam", "C#", "Arcade"],
     link: "/projects/color-infection",
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio Archive",
     description: "Explore my journey through past projects and see the evolution of my skills and creativity. This archive showcases a diverse range of work, from web3 innovations to AI-powered applications.",
     technologies: ["Web3", "LLM", "GPT API", "UNITY", "Game Development"],
