@@ -1,6 +1,7 @@
 .pageContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 20px;
   padding: 10px;
   min-height: calc(100vh - 100px);
@@ -53,6 +54,7 @@
   border-color: #713491;
   border-radius: 5px;
   padding: 20px;
+  max-width: 1200px;
 }
 
 .tabContent p {

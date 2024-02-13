@@ -28,6 +28,7 @@
   border-radius: 5px;
   transition: transform 0.3s ease;
   width: 90%;
+  max-width: 1200px;
 }
 
 .faqQuestion {
