@@ -55,8 +55,29 @@
   padding: 20px;
 }
 
+.tabContent p {
+  color: #f8e03e; /* Light grey text for better readability against the dark background */
+  margin-bottom: 15px; /* Adds space between paragraphs for readability */
+  line-height: 1.6; /* Improves text readability */
+}
+
+.tabContent ul {
+  padding: 20px;
+}
+
+.overviewHeading {
+  font-size: 1.5rem;
+  color: #fd46d6;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 /* Media query for mobile view */
 @media only screen and (max-width: 768px) {
+
+  .overviewHeading {
+    font-size: 1.25rem;
+  }
 
   .pageContainer {
     display: flex;
