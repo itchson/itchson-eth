@@ -37,11 +37,11 @@ const ColorInfection = () => {
                 <h2>Functionality and Features:</h2>
                 <p className={styles.paragraph}>
                   The core functionality of DALLE3-X-POST revolves around its ability to:
-                </p>
                 <ul>
                   <li>Automatically generate game art assets using OpenAI's DALL-E 3.</li>
                   <li>Post the generated images on Twitter with custom captions and hashtags to maximize visibility and engagement.</li>
                 </ul>
+                </p>
                 <h2>Technical Stack:</h2>
                 <ul>
                   <li>AWS Lambda: Hosts the automation script, ensuring scalability and reliability.</li>
