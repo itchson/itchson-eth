@@ -8,7 +8,7 @@ const RainingPixels: React.FC = () => {
     if (!canvas) return;
 
     const ctx = canvas.getContext('2d');
-    const colors = ['#713491', '#f8e03e', '#fd46d6'];
+    const colors = ['#713491', '#f8e03e', '#fd46d6', '#11cef6'];
     let particles = [];
     let mouseX = 0;
     let mouseY = 0;
