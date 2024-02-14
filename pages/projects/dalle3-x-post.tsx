@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Layout from "../../components/Layout";
 import Footer from '../../components/Footer';
-import styles from "../../styles/galaxy-royale.module.css";
+import styles from "../../styles/Posts.module.css";
 
 const Dalle3XPost = () => {
   const [activeTab, setActiveTab] = useState("Overview");

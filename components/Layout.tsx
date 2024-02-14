@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Navbar from './Navbar';
 import styles from './Layout.module.css';
+import RainingPixels from '../utils/RainingPixels';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,6 +11,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, title }) => (
   <div className={styles.layoutContainer}>
+    <RainingPixels />
     <Head>
       <title>{title ? `${title}` : 'ITCHSON'}</title>
       <link rel="icon" href="/favicon.ico" />
