@@ -29,8 +29,10 @@
 
 .titleContainer h1 {
   color: #11cef6;
+  word-wrap: break-word;
   background-color: transparent;
   padding: 0;
+
 }
 
 .contentContainer {
@@ -77,8 +79,8 @@
     padding: 20px;
   }
 
-  .titleContainer {
-    font-size: 1.5em;
+  .titleContainer h1 {
+    font-size: 4vw;
   }
 
   .contentContainer h1 {
