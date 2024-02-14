@@ -17,7 +17,7 @@ const RainingPixels: React.FC = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
 
-      particles = Array.from({ length: 50 }, () => ({
+      particles = Array.from({ length: 40 }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         speedX: (Math.random() > 0.5 ? 1 : -1) * 0.5,
@@ -48,6 +48,7 @@ const RainingPixels: React.FC = () => {
           if (dist < 50) {
             particle.speedX = dx / dist;
             particle.speedY = dy / dist;
+            particle.color = colors[Math.floor(Math.random() * colors.length)]; // change color
           }
 
           particle.x += particle.speedX;
